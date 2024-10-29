@@ -234,7 +234,7 @@ def sendExpensesViaEmail(email):
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
             server.starttls()
             server.login(senderEmail, senderPassword)
-            server.sendMessage(message)
+            server.send_message(message)
             print("\nExpenses Sent Successfully!\n")
     except Exception as e:
         print(f"Error Sending Email: {e}")
