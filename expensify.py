@@ -312,6 +312,3 @@ def exitProgram():
     print("|               Thank you for using EXPENSIFY!             |".center(60))
     print("------------------------------------------------------------")
     sys.exit()
-
-if __name__ == "__main__":
-    main()
